@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@controllers/*": ["src/controllers/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/middlewares/AsyncHandler.js", "src/models/Admin/AdminModel.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
